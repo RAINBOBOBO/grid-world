@@ -1,3 +1,3 @@
 # DEV
-grid-world\Scripts\activate
+grid-world\Scripts\activate \
 pip install -r requirements.txt
