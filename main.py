@@ -1,14 +1,18 @@
 from kivy.app import App
 from kivy.core.window import Window
+from kivy.lang import Builder
 
-from screens.main_menu import MainMenu
+builder = Builder.load_file("ui/designs/screen_manager.kv")
 
 
 class MyApp(App):
-    def build(self):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
         Window.maximize()
         Window.fullscreen = True
-        return MainMenu()
+
+    def build(self):
+        return builder
 
 
 if __name__ == "__main__":

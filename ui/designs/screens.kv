@@ -1,0 +1,23 @@
+#: import QuitButton ui.buttons.QuitButton
+#: import MainMenuScreen ui.screens.MainMenuScreen
+
+#: include ui/designs/buttons.kv
+
+<MainMenuScreen>:
+	name: "menu"
+	
+	BoxLayout:
+		orientation: "vertical"
+		size: root.width, root.height
+
+		Button:
+			text: "Start"
+			font_size: 32
+
+		Button:
+			text: "Settings"
+			font_size: 32
+
+		QuitButton:
+
+<SettingsScreen>
